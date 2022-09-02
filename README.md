@@ -1,2 +1,2 @@
 # CodeWars
-Coding problems. Try to solve every problem you encounter!
+Solving problems. Try to fix every problem you encounter!
