@@ -3,11 +3,17 @@
 using namespace std;
 class cuenta{
 public: //atributos
-
+    string nombre;
+    string apellido;
+    int ci;
+    int deposito;
+    int extraccion;
+    int nrocuenta;
+    int saldo;
 public: //metodos
 void mostrardatos();
 void cargardeposito();
-void cargardeposito();
+void cargardatos();
 void cargarextraccion(); 
 void mostrarsaldo();
 };
