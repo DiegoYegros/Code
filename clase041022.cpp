@@ -5,6 +5,10 @@ class cuenta{
 public: //atributos
 
 public: //metodos
+void mostrardatos();
+void cargardeposito();
+void cargardeposito();
+void cargarextraccion(); 
 void mostrarsaldo();
 };
 
