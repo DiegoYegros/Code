@@ -74,7 +74,8 @@ cuenta::cuenta(){
     saldo = 0;
 }
 void cuenta::cargardeposito(){
-    
+    cout<<"Monto a depositar: "; cin>>deposito;
+    saldo += deposito;   
 }
 void menu1(){
     cout<<"\n\t\t FINANZAS S.A. \n\n";
