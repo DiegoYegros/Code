@@ -5,6 +5,7 @@ class cuenta{
 public: //atributos
 
 public: //metodos
+void mostrarsaldo();
 };
 
 void menu1();
@@ -46,4 +47,17 @@ void cuenta::cargardatos(){
     cout<<"Apellido: "; cin>>apellido;
     cout<<"CI: "; cin>>ci;
     cout<<"Nro Cuenta: "; cin>>nrocuenta;
+}
+
+void cuenta::cargarextraccion(){
+    cout<<"Monto a extraer: "<<endl;
+    cin>>extraccion;
+    while (extraccion>saldo){
+        cout<<"El monto a extraer no puede ser mayor que el saldo. Intente de nuevo: "<<endl;
+        cin>>extraccion;
+    }
+    saldo -= extraccion;
+
+void cuenta::mostrarsaldo(){
+    cout<<"El saldo de la cuenta es: "<<saldo<<endl;
 }
