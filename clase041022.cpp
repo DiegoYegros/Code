@@ -2,7 +2,9 @@
 #include <string>
 using namespace std;
 class cuenta{
+public: //atributos
 
+public: //metodos
 };
 
 void menu1();
@@ -35,6 +37,13 @@ int main(){
         cout<<endl<<endl;
         system("pause");
         system("cls");
+    }while(op!=9);
+system("pause");
+}
 
-    }
+void cuenta::cargardatos(){
+    cout<<"Nombre: "; cin>>nombre;
+    cout<<"Apellido: "; cin>>apellido;
+    cout<<"CI: "; cin>>ci;
+    cout<<"Nro Cuenta: "; cin>>nrocuenta;
 }
