@@ -61,3 +61,28 @@ void cuenta::cargarextraccion(){
 void cuenta::mostrarsaldo(){
     cout<<"El saldo de la cuenta es: "<<saldo<<endl;
 }
+
+//Constructor de la clase
+
+cuenta::cuenta(){
+    nombre = "";
+    apellido = "";
+    ci = 0;
+    deposito = 0;
+    extraccion=0;
+    nrocuenta = 0;
+    saldo = 0;
+}
+void cuenta::cargardeposito(){
+    
+}
+void menu1(){
+    cout<<"\n\t\t FINANZAS S.A. \n\n";
+    cout<<"1. Cargar Datos"<<endl;
+    cout<<"2. Mostrar Datos"<<endl;
+    cout<<"3. Deposito"<<endl;
+    cout<<"4. Extracciones"<<endl;
+    cout<<"5. Consultar saldo"<<endl;
+    cout<<"9. Salir"<<endl;
+    cout<<"\nIngrese la opcion"<<endl;
+}
