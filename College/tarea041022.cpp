@@ -13,15 +13,22 @@ class financiera
     int nrocuenta;
     int ci;
     // metodos
-    void usuario();
+    void cuenta();
     void deposito();
     void extraccion();
 };
+void financiera::deposito()
+{
+    system("cls");
+    cout << "\t\tBienvenido al menú de mostrar datos\n"
+         << endl;
+}
 int main()
 {
     int opc = 0;
     while (opc != 9)
     {
+        financiera();
     }
     return 0;
 }
