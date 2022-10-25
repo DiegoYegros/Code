@@ -43,7 +43,47 @@ class regalo : public flor, public tarjeta{
 
 void menu();
 
+void flor()::cargarFlor{
+    cout<<system("cls");
+    cout<<"Nombre de la flor: "; cin>>nombre;
+    cout<<"Color de la flor: "; cin>>color;
+    cout<<"Especie de la flor: "; cin>>especie;
+}
+void flor()::mostrarFlor{
+    cout<<system("cls");
+    cout<<"Nombre de la flor: "; nombre;
+    cout<<"Color de la flor: "; color;
+    cout<<"Especie de la flor: "; especie;
+}
+
+void regalo()::cargarRegalo{
+    system("cls");
+    cout<<"Cargar destinatario: "; cin>>destinatario;
+    cout<<"Cargar emisor: "; cin>>emisor;
+    cout<<"Cargar direccion: "; cin>>direccion;
+    cout<<"Cargar fecha: "; cin>>fecha;
+}
+void regalo()::mostrarRegalo{
+    system("cls");
+    cout<<"Cargar destinatario: "; destinatario;
+    cout<<"Cargar emisor: "; emisor;
+    cout<<"Direccion: "; direccion;
+    cout<<"Fecha: "; fecha;
+}
+void tarjeta()::cargarmensaje{
+    system("cls");
+    cout<<"Ingrese su mensaje: "; cin>>mensaje;
+}
+void tarjeta()::mostrarmensaje{
+    system("cls");
+    cout<<"Mensaje: "; mensaje;
+}
+int regalo()::buscarFlor{
+
+}
+
 int main(){
+    menu();
     return 0;
 }
 
@@ -56,7 +96,21 @@ void menu(){
     cout<<"2. Mostrar regalo\n";
     cout<<"3. Buscar la flor y ver los datos\n";
     cout<<"4. Salir\n";
+    cout<<"Ingrese la opcion que quiera: "; cin>>opc;
+    switch(opc){
+        case 1:
+            cargar
+        break;
+        case 2:
+        break;
+        case 3:
+        break;
+        case 4:
+        break;
     }
+    
+    
+}
 
 
 }
