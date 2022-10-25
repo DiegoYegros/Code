@@ -21,7 +21,7 @@ class flor{
 
 class tarjeta{
     public: //atributos
-    int mensaje;
+    string mensaje;
     public: //metodos
     void cargarmensaje();
     void mostrarmensaje();
@@ -41,6 +41,23 @@ class regalo : public flor, public tarjeta{
     int buscarFlor();
 }
 
+
+void flor::flor(){
+    nombre = "";
+    color = "";
+    especie = "";
+}
+tarjeta::tarjeta(){
+    mensaje ="";
+}
+
+regalo::regalo(){
+    precio = 0;
+    direccion = "";
+    fechaenvio = "";
+    de = "";
+    para = "";
+}
 void menu();
 
 void flor()::cargarFlor{
@@ -88,6 +105,7 @@ int main(){
 }
 
 void menu(){
+    regalo cliente;
     int opc = 0;
     while (opc != 4){
     system("cls");
@@ -99,11 +117,16 @@ void menu(){
     cout<<"Ingrese la opcion que quiera: "; cin>>opc;
     switch(opc){
         case 1:
-            cargar
+            cliente.cargarRegalo();
+            cliente.cargarFlor();
+            cliente.cargarmensaje();
         break;
         case 2:
+            mostrarRegalo();
         break;
         case 3:
+            buscarFlor();
+            mostrarFlor();
         break;
         case 4:
         break;
