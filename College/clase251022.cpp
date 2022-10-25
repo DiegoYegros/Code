@@ -87,6 +87,7 @@ void regalo()::mostrarRegalo{
     cout<<"Direccion: "; direccion;
     cout<<"Fecha: "; fecha;
 }
+
 void tarjeta()::cargarmensaje{
     system("cls");
     cout<<"Ingrese su mensaje: "; cin>>mensaje;
@@ -96,7 +97,15 @@ void tarjeta()::mostrarmensaje{
     cout<<"Mensaje: "; mensaje;
 }
 int regalo()::buscarFlor{
-
+    string buscar;
+    int flag = 0;
+    cout<<"Buscar flor: "; cin>>buscar;
+    if(buscar == nombre)
+    {
+        bandera = 1;
+        return bandera;
+    }
+    return bandera;
 }
 
 int main(){
@@ -125,14 +134,24 @@ void menu(){
             mostrarRegalo();
         break;
         case 3:
-            buscarFlor();
+            if(cliente.buscarflor()==1){
             mostrarFlor();
+            }
+            else{
+                system("cls");
+                cout<<"No se ha encontrado una flor. Presione enter para volver al menu.";
+                system("pause");
+            }
         break;
         case 4:
         system("cls");
         cout("Gracias por usar este programa. Hasta la proxima.");
         system("pause");
         break;
+        default: 
+        system("cls");
+        cout("Opcion invalida. Vuelva a intentarlo.");
+        system("pause");
     }
     
     
