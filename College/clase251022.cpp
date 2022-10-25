@@ -153,9 +153,5 @@ void menu(){
         cout("Opcion invalida. Vuelva a intentarlo.");
         system("pause");
     }
-    
-    
 }
-
-
 }
