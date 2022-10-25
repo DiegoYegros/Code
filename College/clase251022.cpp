@@ -117,9 +117,9 @@ void menu(){
     cout<<"Ingrese la opcion que quiera: "; cin>>opc;
     switch(opc){
         case 1:
-            cliente.cargarRegalo();
             cliente.cargarFlor();
             cliente.cargarmensaje();
+            cliente.cargarRegalo();
         break;
         case 2:
             mostrarRegalo();
@@ -129,6 +129,9 @@ void menu(){
             mostrarFlor();
         break;
         case 4:
+        system("cls");
+        cout("Gracias por usar este programa. Hasta la proxima.");
+        system("pause");
         break;
     }
     
