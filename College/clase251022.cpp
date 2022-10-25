@@ -38,5 +38,25 @@ class regalo : public flor, public tarjeta{
     public: //metodos
     void cargarRegalo();
     void mostrarRegalo();
-    void buscarFlor();
+    int buscarFlor();
+}
+
+void menu();
+
+int main(){
+    return 0;
+}
+
+void menu(){
+    int opc = 0;
+    while (opc != 4){
+    system("cls");
+    cout<<"\t\tFloreria Honor Colorado\n";
+    cout<<"1. Cargar regalo\n";
+    cout<<"2. Mostrar regalo\n";
+    cout<<"3. Buscar la flor y ver los datos\n";
+    cout<<"4. Salir\n";
+    }
+
+
 }
