@@ -20,6 +20,7 @@ class cocinero{
 	//constructor
 	public:
 	void mostrarNombre();
+	cocinero();
 };
 
 class ingredientes{
@@ -52,6 +53,10 @@ void cocinero::mostrarNombre(){
 	cout<<"Nombre = "<<nombre;
 	cout<<"\nApellido = "<<apellido;
 }
+cocinero::cocinero(){
+	nombre = "Diego";
+	apellido = "Yegros";
+}
 
 //Clase ingredientes
 void ingredientes::cargarIngredientes(){
@@ -67,17 +72,17 @@ void ingredientes::mostrarIngredientes(){
 
 //Clase comida
 void comida::cargarComida(){
-	cargarIngredientes();
+	ingre.cargarIngredientes();
 	cout<<"Ingrese nombre platillo: "; cin>>platillo;
 	cout<<"Ingrese precio: "; cin>>precio;
 	system("pause");
 }
 
 void comida::mostrarComida(){
-	mostrarNombre();
+	chef.mostrarNombre();
 	cout<<"\nNombre platillo = "<<platillo;
 	cout<<"\nPrecio = "<<precio;
-	mostrarIngredientes();
+	ingre.mostrarIngredientes();
 	system("pause");
 }
 
