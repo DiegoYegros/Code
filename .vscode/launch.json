@@ -1,6 +1,13 @@
 {
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Code_471f3521"
+        },
+        {
             "name": "Docker: Python - General",
             "type": "docker",
             "request": "launch",
