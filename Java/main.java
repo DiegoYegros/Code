@@ -1,15 +1,23 @@
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Comparator;
 
 class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("What is your age?");
-        int age = Integer.parseInt(scanner.nextLine());
-        System.out.println("What is your name?");
-        String name = scanner.nextLine();
-        String formattedString = String.format("Hi, my name is %s and I am %d", name, age);
-        System.out.println(formattedString);
-        scanner.close();
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
+        int multiplicator = 2;
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        numbers.add(5);
 
+        System.out.println("Before: " + numbers.toString());
+
+        numbers.forEach(number -> {
+            numbers.set(numbers.indexOf(number), number * multiplicator);
+            System.out.printf("%d * %d = %d\n", number, multiplicator, number * multiplicator);
+        });
+        System.out.println((numbers.sort(Comparator.naturalOrder())).toString(););
     }
 }
