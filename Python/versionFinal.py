@@ -37,7 +37,8 @@ def juego():
                 if respuesta[x] in userInput:
                     Vacas+=1
         if Toros == 4:
-            print(f"Felicidades! El numero secreto era:{respuesta}")
+            print(f"Felicidades! El numero secreto era: {respuesta}")
+            exit()
         else:
             system("cls")
             print(f"{Vacas} vacas, {Toros} toros.")
