@@ -1,8 +1,3 @@
-Matias Ivan Centurión Escobar<maticentul50 @gmail.com>
-
-    6 : 10 PM(9 minutes ago)
-
-        to me
 // Utilizando polimorfismo dada una clase base de nombre figuras con los atributos base y altura
 // de tipo float y tres metodos, capturar (que capture los datos introducidos por teclado de la base y la altura),
 // perimetro y area.
@@ -13,7 +8,7 @@ Matias Ivan Centurión Escobar<maticentul50 @gmail.com>
 // Permitir a los usuarios introducir por teclado los datos de base y altura en el metodo captura 
 #include <iostream>
 #include <conio.h>
-    using namespace std;
+using namespace std;
 class figuras
 {
 public:
