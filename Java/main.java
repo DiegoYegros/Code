@@ -18,6 +18,7 @@ class Main {
             numbers.set(numbers.indexOf(number), number * multiplicator);
             System.out.printf("%d * %d = %d\n", number, multiplicator, number * multiplicator);
         });
-        System.out.println((numbers.sort(Comparator.naturalOrder())).toString(););
+        System.out.println("I want this to not be in red. So im writing whatever.");
     }
+
 }
