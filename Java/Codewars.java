@@ -4,7 +4,7 @@ public class Codewars {
 	public int countSheeps(Boolean[] arrayOfSheeps) {
 		// TODO May the force be with you
 		int contador = 0;
-		System.out.println(contador);
+g		System.out.println(contador);
 		for (boolean i : arrayOfSheeps) {
 			if (i)
 				contador++;
